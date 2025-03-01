@@ -1,0 +1,2 @@
+class InvalidGPTMenuItemResponseError(BaseException):
+    pass
