@@ -18,7 +18,6 @@ def parse_dict_str_from_llm_response(llm_response: str) -> MenuItemList:
     try:
         menu_items = MenuItemList.model_validate_json(output)
     except Exception as e:
-        # todo: reraise and err handling
         raise InvalidGPTMenuItemResponseError(e)
 
     return menu_items

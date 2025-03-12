@@ -64,6 +64,7 @@ async def main(pdf_path: Path) -> Menu:
     llm = LLM(
         cohere_api_key=secrets.cohere_settings__api_key,
         cohere_client_name=secrets.cohere_settings__client_name,
+        cohere_model=secrets.cohere_settings__model_name,
     )
     menu_extractor = MenuExtractor(pdf_converter=PdfConverter(), llm=llm)
 

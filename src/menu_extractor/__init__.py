@@ -8,6 +8,7 @@ class Secrets(BaseSettings):
     )
     cohere_settings__client_name: str
     cohere_settings__api_key: str
+    cohere_settings__model_name: str
 
 
 # note: Secrets() is populated from the .env file, which is not detected by Pylance

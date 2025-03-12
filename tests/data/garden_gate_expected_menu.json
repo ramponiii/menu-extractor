@@ -1,0 +1,222 @@
+{
+    "service_charge": 10,
+    "menu_description": "n/a",
+    "menu_items": [
+        {
+            "name": "Handmade Scotch Egg",
+            "description": "golden beetroot piccallili",
+            "price": 8.0,
+            "type": "snack"
+        },
+        {
+            "name": "Padrón Peppers",
+            "description": "extra virgin olive oil (ve)",
+            "price": 7.0,
+            "type": "snack"
+        },
+        {
+            "name": "Chorizo Sausages",
+            "description": "glazed with chilli honey",
+            "price": 7.0,
+            "type": "snack"
+        },
+        {
+            "name": "Artichoke, Red Pepper & Tomato Arancini",
+            "description": "herb mayo (ve)",
+            "price": 7.0,
+            "type": "snack"
+        },
+        {
+            "name": "Green & Kalamata Olives",
+            "description": "(ve)",
+            "price": 5.0,
+            "type": "snack"
+        },
+        {
+            "name": "Whole Baked Sourdough",
+            "description": "salted butter (v)",
+            "price": 7.5,
+            "type": "snack"
+        },
+        {
+            "name": "Rosemary & Garlic Camembert Baked in Sourdough",
+            "description": "hedgerow chutney (v)",
+            "price": 16.0,
+            "type": "sharer"
+        },
+        {
+            "name": "Nachos",
+            "description": "flour tortillas, sour cream, avocado, chillies, pico de gallo, melted mature Cheddar (v)",
+            "price": 12.5,
+            "type": "sharer"
+        },
+        {
+            "name": "Charcuterie Board",
+            "description": "Italian cured meats, olives, pickles, chargrilled artichokes, toasted sourdough, rye bread",
+            "price": 19.0,
+            "type": "sharer"
+        },
+        {
+            "name": "Baked King Prawns and Chorizo",
+            "description": "garlic butter, cherry tomatoes, toasted sourdough",
+            "price": 9.0,
+            "type": "small plate"
+        },
+        {
+            "name": "Crispy Fried Mozzarella",
+            "description": "caponata, tomatoes, olives* (v)",
+            "price": 8.5,
+            "type": "small plate"
+        },
+        {
+            "name": "Miso Chicken Skewers",
+            "description": "yakiniku BBQ sauce, miso dressing*",
+            "price": 9.0,
+            "type": "small plate"
+        },
+        {
+            "name": "Crispy Cauliflower Florets",
+            "description": "gochujang mayo* (ve)",
+            "price": 8.0,
+            "type": "small plate"
+        },
+        {
+            "name": "Calamari",
+            "description": "saffron aioli",
+            "price": 9.0,
+            "type": "small plate"
+        },
+        {
+            "name": "8oz Sirloin Steak",
+            "description": "chips, watercress, your choice of peppercorn* (911kcal), chimichurri (1190kcal) or beef dripping & thyme sauce (1033kcal)",
+            "price": 29.0,
+            "type": "main"
+        },
+        {
+            "name": "Pork Belly",
+            "description": "apple ketchup, buttery mash, crackling, braised red cabbage, red wine sauce* (1590kcal)",
+            "price": 18.0,
+            "type": "main"
+        },
+        {
+            "name": "Pan-Fried Seabass Fillets",
+            "description": "ratte potatoes, saut�ed leeks, peas & chorizo, lemon, thyme & white wine velout�",
+            "price": 20.0,
+            "type": "main"
+        },
+        {
+            "name": "Slow-Cooked Steak & Pale Ale Pie",
+            "description": "buttery mash, buttered leeks, savoy cabbage, red wine sauce (1251kcal)",
+            "price": 19.0,
+            "type": "main"
+        },
+        {
+            "name": "Chicken Schnitzel",
+            "description": "rocket & cherry tomato salad, fries (1116kcal)",
+            "price": 18.0,
+            "type": "main"
+        },
+        {
+            "name": "British Outdoor-Bred Pork Sausage and Mash",
+            "description": "crispy spiced onions, red wine sauce (1193kcal) Vegetarian serve available (v) (704kcal)",
+            "price": 16.0,
+            "type": "main"
+        },
+        {
+            "name": "King Prawn & Devon Crab Linguine",
+            "description": "picante sauce, lemon & herb pangrattato (653kcal)",
+            "price": 18.0,
+            "type": "main"
+        },
+        {
+            "name": "Avocado & Mango Salad",
+            "description": "edamame beans, spring onion, mint, grains, coriander, lime dressing (ve) (476kcal)",
+            "price": 15.0,
+            "type": "main"
+        },
+        {
+            "name": "Chicken & Bacon Burger",
+            "description": "crispy fried chicken breast, smoked streaky bacon, smoked Cheddar, fries, house sauce (1280kcal)",
+            "price": 18.0,
+            "type": "main"
+        },
+        {
+            "name": "Smoked Bacon Cheeseburger",
+            "description": "grilled beef patty, smoked streaky bacon, smoked Cheddar, fries, house sauce (1296kcal)",
+            "price": 18.5,
+            "type": "main"
+        },
+        {
+            "name": "Spiced Falafel Burger",
+            "description": "applewood smoked vegan slice, crispy spiced onions, pickles, pico de gallo salsa, chipotle chilli jam, fries, house sauce (ve) (1258kcal)",
+            "price": 17.0,
+            "type": "main"
+        },
+        {
+            "name": "Beer-Battered Atlantic Haddock & Chips",
+            "description": "minted crushed peas, tartare sauce (1220kcal)",
+            "price": 19.0,
+            "type": "main"
+        },
+        {
+            "name": "Hand-Breaded Halloumi Fries",
+            "description": "chipotle chilli jam (v)",
+            "price": 8.0,
+            "type": "side"
+        },
+        {
+            "name": "Chips",
+            "description": "(ve)",
+            "price": 5.5,
+            "type": "side"
+        },
+        {
+            "name": "Rosemary & Parmesan Fries",
+            "description": "white truffle-infused oil",
+            "price": 6.0,
+            "type": "side"
+        },
+        {
+            "name": "Cherry Tomato & Grain Salad",
+            "description": "(ve)",
+            "price": 5.0,
+            "type": "side"
+        },
+        {
+            "name": "Apple, Plum & Damson Crumble",
+            "description": "vanilla crème Anglaise (v)",
+            "price": 8.5,
+            "type": "dessert"
+        },
+        {
+            "name": "Triple Chocolate Brownie",
+            "description": "salted caramel sauce, honeycomb ice cream (v)",
+            "price": 8.5,
+            "type": "dessert"
+        },
+        {
+            "name": "Sticky Toffee Pudding",
+            "description": "ginger ice cream (v)",
+            "price": 8.5,
+            "type": "dessert"
+        },
+        {
+            "name": "Tiramisu",
+            "description": "sponge soaked in coffee and marsala wine, layered with mascarpone cream (v)",
+            "price": 9.0,
+            "type": "dessert"
+        },
+        {
+            "name": "Coffee & Mini Tiramisu",
+            "description": "missing",
+            "price": 7.0,
+            "type": "dessert"
+        },
+        {
+            "name": "Brownie",
+            "description": "missing",
+            "price": 7.0,
+            "type": "dessert"
+        }
+    ]
+}

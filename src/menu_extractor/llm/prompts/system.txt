@@ -7,14 +7,13 @@ You will be given a restaurant menu and you will extract the information in the 
 - If an int field is missing, write "-1".
 
 ### Output Format
-
 ```json
 [
     {
         "name": str,
         "description": str,
         "price": float,
-        "type": "food" or "drink",
+        "type": "drink" or "snack" or "dessert" or "main" or "side" or "other"
     },
     (...)
 ]   
