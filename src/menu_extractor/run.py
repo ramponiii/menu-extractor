@@ -2,10 +2,10 @@ import asyncio
 from pathlib import Path
 
 from menu_extractor import logger, secrets
+from menu_extractor.chunker import PdfChunker
 from menu_extractor.extractor import MenuItemExtractor
 from menu_extractor.llm import LLM
 from menu_extractor.models import Menu, MenuItem
-from menu_extractor.pdf_converter import PdfConverter
 
 
 async def pdf_to_menu(pdf_path: Path) -> Menu:
@@ -17,8 +17,10 @@ async def pdf_to_menu(pdf_path: Path) -> Menu:
         cohere_model=secrets.cohere_settings__model_name,
     )
     extractor = MenuItemExtractor(llm_client=llm)
-    pdf_converter = PdfConverter()
-    pdf_pages = pdf_converter.convert_to_text_pages(pdf_path)
+    pdf_converter = PdfChunker(
+        pdf_path, model_weights_path=secrets.doclayout__model_path
+    )  # TODO: chunker config
+    pdf_pages = pdf_converter.chunk()
 
     menu_item_extraction_chunked = await asyncio.gather(
         *(extractor.extract(p) for p in pdf_pages), return_exceptions=True
