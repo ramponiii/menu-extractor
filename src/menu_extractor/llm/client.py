@@ -1,7 +1,6 @@
 from cohere import AsyncClient
 
 from menu_extractor import logger
-from menu_extractor.llm.prompts import SYSTEM, USER
 
 
 class LLM:
@@ -13,16 +12,14 @@ class LLM:
         self._cohere_model = cohere_model
         pass
 
-    async def extract_structured_data_string_from_menu_page(
-        self, menu_page: str
-    ) -> str:
+    async def generate(self, system_message: str, user_message: str) -> str:
         logger.debug(
             "Sending LLM request ...",
-            extra={"pdf_page_characters": len(menu_page)},
+            extra={"input_tokens": len(user_message) + len(system_message)},
         )
         response = await self._client.chat(
-            message=USER.format(menu_page=menu_page),
+            message=user_message,
             model=self._cohere_model,
-            preamble=SYSTEM,
+            preamble=system_message,
         )
         return response.text

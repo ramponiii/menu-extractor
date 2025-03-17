@@ -1,0 +1,9 @@
+### Task
+You will be given some text from a restaurant menu and you will extract the information into the format given below.
+
+### Output Format
+```json 
+[
+{menu_item_schema}
+]
+```

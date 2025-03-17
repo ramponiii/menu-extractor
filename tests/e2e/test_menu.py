@@ -4,7 +4,7 @@ from pathlib import Path
 
 from rapidfuzz import fuzz
 
-from menu_extractor.main import main
+from menu_extractor.__main__ import main
 from menu_extractor.models import Menu, MenuItem
 from tests.data import GARDEN_GATE_EXPECTATION, GARDEN_GATE_PDF
 
