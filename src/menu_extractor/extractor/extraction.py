@@ -22,8 +22,6 @@ class MenuItemExtractor:
         response = await self._llm.generate(
             system_message=self._system_message, user_message=user_message
         )
-        with open("o.txt", "w") as file:
-            file.write(response)
 
         result = parse_text_to_model(response, list[MenuItem])
 

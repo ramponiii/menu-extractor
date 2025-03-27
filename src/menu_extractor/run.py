@@ -17,13 +17,11 @@ async def pdf_to_menu(pdf_path: Path) -> Menu:
         cohere_model=secrets.cohere_settings__model_name,
     )
     extractor = MenuItemExtractor(llm_client=llm)
-    pdf_converter = PdfChunker(
-        pdf_path, model_weights_path=secrets.doclayout__model_path
-    )  # TODO: chunker config
-    pdf_pages = pdf_converter.chunk()
+    pdf_converter = PdfChunker(pdf_path)
+    chunks = pdf_converter.chunk()
 
     menu_item_extraction_chunked = await asyncio.gather(
-        *(extractor.extract(p) for p in pdf_pages), return_exceptions=True
+        *(extractor.extract(c) for c in chunks), return_exceptions=True
     )
 
     menu_items: list[MenuItem] = []
@@ -31,6 +29,9 @@ async def pdf_to_menu(pdf_path: Path) -> Menu:
         if isinstance(extracted_menu_items, BaseException):
             logger.error("Error extracting menu items", exc_info=extracted_menu_items)
         else:
+            logger.info(
+                "Found Menu Items...", extra={"n_menu_items": len(extracted_menu_items)}
+            )
             menu_items.extend(extracted_menu_items)
 
     return Menu(service_charge=-1, menu_description="Missing", menu_items=menu_items)

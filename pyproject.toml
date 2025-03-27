@@ -25,6 +25,7 @@ pythonpath = ["."]
 
 [dependency-groups]
 dev = [
+    "pytest-coverage>=0.0",
     "pytest>=8.3.4",
     "rapidfuzz>=3.12.2",
 ]

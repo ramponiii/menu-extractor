@@ -1,4 +1,4 @@
-from src.menu_extractor.llm.client import (
+from .client import (
     LLM,
 )
 
